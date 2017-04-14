@@ -11923,6 +11923,7 @@ app.partial.thankyou = function(){
 			}
 			FB.login(function(r){
 				FB.api('/me?field=email,name', function(me){
+					console.log(me);
 					$.ajax({
 						url: 'api-save',
 						data:{
@@ -11930,7 +11931,7 @@ app.partial.thankyou = function(){
 							ticket: app.puzzle.ticket,
 							fbid: me.id,
 							pname: me.name,
-							email: me.email
+							email: me.email || null
 						},
 						method: 'post',
 						success: function(r){							
