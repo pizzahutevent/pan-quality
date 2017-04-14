@@ -11922,7 +11922,7 @@ app.partial.thankyou = function(){
 				return false;
 			}
 			FB.login(function(r){
-				FB.api('/me?field=email,name', function(me){
+				FB.api('/me?fields=email,name', function(me){
 					console.log(me);
 					$.ajax({
 						url: 'api-save',
