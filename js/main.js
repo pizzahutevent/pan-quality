@@ -11960,36 +11960,4 @@ app.partial.thankyou = function(){
 	}
 };
 
-'use strict';
-/* jshint devel:true, latedef:false,unused: false  */
-/*global app, $ */
-app.partial.messenger = function(){
-
-	var container = $('#container');
-	container.on('page:update:messenger', function(){
-		if($('html.ios').length || $('html.android').length){
-			setTimeout(function () { 
-				if($('html.ios').length){
-					location.href = "https://itunes.apple.com/tw/app/messenger/id454638411?mt=8"; 
-				}else{
-					location.href = "https://play.google.com/store/apps/details?id=com.facebook.orca&hl=zh_TW"; 
-				}
-
-			}, 25);
-			location.href = "fb-messenger://user-thread/263705449348";
-		}else{
-			if($('html.desktop').length){
-				location.href = "https://www.facebook.com/messages/t/263705449348";
-			}else{
-				location.href = 'https://m.facebook.com/messages/compose/?ids=263705449348';
-			}
-		}
-	});
-	if($('body.page-template-template-messenger').length){
-		container.trigger('page:update:messenger');
-		container.trigger('page:update', 'messenger');
-	}
-
-};
-
 //# sourceMappingURL=main.js.map
