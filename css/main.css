@@ -10661,7 +10661,7 @@ html {
     z-index: 2;
     top: 0;
     bottom: 0;
-    margin-top: 78.125%;
+    margin-top: 87.5%;
     margin-bottom: 0%;
     color: #fa0000; }
   .waiting .empty-seat {
@@ -10677,7 +10677,7 @@ html {
     z-index: 2;
     top: 0;
     bottom: 0;
-    margin-top: 60.3125%;
+    margin-top: 57.8125%;
     margin-bottom: 0%;
     color: #fff; }
   .waiting .total-seat {
@@ -10686,14 +10686,14 @@ html {
     height: 0;
     position: absolute;
     padding-top: 6.25%;
-    margin-left: 72.5%;
+    margin-left: 75%;
     left: 0;
     right: auto;
     margin-right: 0%;
     z-index: 2;
     top: 0;
     bottom: 0;
-    margin-top: 63.125%;
+    margin-top: 62.5%;
     margin-bottom: 0%;
     color: #fff; }
   .waiting .hash span, .waiting .empty-seat span, .waiting .total-seat span {
