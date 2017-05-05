@@ -10922,6 +10922,11 @@ var debug = /localhost[:]\d+|pizzahuteventtest.azurewebsites.net/.test(location.
 
 $(function(){
     app.getParam = getParam;
+
+    //未完成的局
+    if(!!$.cookie('puzzle')){
+    	app.puzzle = $.parseJSON(  $.cookie('puzzle')  );
+    }
     
     // 定義每個section
 	$.each(app.partial, function(name, init){
@@ -11453,6 +11458,7 @@ app.partial.home = function(){
 						total: r.total,
 						current: r.current
 					};
+					$.cookie('puzzle', JSON.stringify(app.puzzle), { expires: 7 });
 					$('header [ref=waiting]').trigger('click');
 				}
 			});
@@ -11586,6 +11592,7 @@ app.partial.join = function(){
 						total: r.total,
 						current: r.current
 					};
+					$.cookie('puzzle', JSON.stringify(app.puzzle), { expires: 7 });
 					$('header [ref=waiting]').trigger('click');
 				}
 			});
@@ -11669,8 +11676,20 @@ app.partial.waiting = function(){
 				});
 			}, 2000);
 		}
+
+		$('.btn-tutor', $page).on('click', function(){
+			$('.pop', $page).addClass('in');
+		});
+
+		$('.pop .btn-close', $page).on('click', function(){
+			$('.pop', $page).removeClass('in');
+		});
 	});
 
+	if($('body.page-template-template-waiting').length){
+		container.trigger('page:update:waiting');
+		container.trigger('page:update', 'waiting');
+	}
 };
 
 'use strict';

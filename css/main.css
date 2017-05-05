@@ -10635,7 +10635,7 @@ html {
     width: 100%;
     height: 0;
     position: relative;
-    padding-top: 0%;
+    padding-top: 200%;
     margin-left: 0%;
     left: 0;
     right: auto;
@@ -10645,7 +10645,6 @@ html {
     bottom: 0;
     margin-top: 0%;
     margin-bottom: 0%;
-    height: 100vh;
     background-size: 100% auto;
     background-position: center top; }
   .waiting .hash {
@@ -10661,7 +10660,7 @@ html {
     z-index: 2;
     top: 0;
     bottom: 0;
-    margin-top: 87.5%;
+    margin-top: 40.625%;
     margin-bottom: 0%;
     color: #fa0000; }
   .waiting .empty-seat {
@@ -10677,7 +10676,7 @@ html {
     z-index: 2;
     top: 0;
     bottom: 0;
-    margin-top: 57.8125%;
+    margin-top: 60.3125%;
     margin-bottom: 0%;
     color: #fff; }
   .waiting .total-seat {
@@ -10686,14 +10685,14 @@ html {
     height: 0;
     position: absolute;
     padding-top: 6.25%;
-    margin-left: 75%;
+    margin-left: 71.875%;
     left: 0;
     right: auto;
     margin-right: 0%;
     z-index: 2;
     top: 0;
     bottom: 0;
-    margin-top: 62.5%;
+    margin-top: 64.6875%;
     margin-bottom: 0%;
     color: #fff; }
   .waiting .hash span, .waiting .empty-seat span, .waiting .total-seat span {
@@ -10703,6 +10702,27 @@ html {
     width: 100%;
     height: 100%;
     text-transform: uppercase; }
+  .waiting .btn-tutor {
+    margin: 0;
+    width: 35.3125%;
+    height: 0;
+    position: absolute;
+    padding-top: 6.25%;
+    margin-left: 32.8125%;
+    left: 0;
+    right: auto;
+    margin-right: 0%;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    margin-top: 86.875%;
+    margin-bottom: 0%; }
+    .waiting .btn-tutor img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto; }
   .waiting .empty-seat span, .waiting .total-seat span {
     color: #f8e4d0;
     text-shadow: 0 0 3px #bf0000, 0 0 5px #bf0000, 0 0 6px #bf0000; }
@@ -10721,6 +10741,77 @@ html {
     bottom: 0;
     margin-top: 0%;
     margin-bottom: 0%; }
+  .waiting .pop {
+    background: rgba(57, 0, 0, 0.72);
+    margin: 0;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    padding-top: 0%;
+    margin-left: 0%;
+    left: 0;
+    right: auto;
+    margin-right: 0%;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    margin-top: 20.3125%;
+    margin-bottom: 0%;
+    height: 100%;
+    height: calc(100% - 20.3125vw);
+    -webkit-animation: fadePop 0.25s 1 linear forwards 0s;
+    -o-animation: fadePop 0.25s 1 linear forwards 0s;
+    animation: fadePop 0.25s 1 linear forwards 0s; }
+    .waiting .pop .content {
+      margin: 0;
+      width: 90.625%;
+      height: 0;
+      position: absolute;
+      padding-top: 0%;
+      margin-left: 4.6875%;
+      left: 0;
+      right: auto;
+      margin-right: 0%;
+      z-index: 2;
+      top: 0;
+      bottom: 0;
+      margin-top: 7.8125%;
+      margin-bottom: 0%;
+      height: calc(100% - 20.3125vw);
+      overflow: auto;
+      -webkit-overflow-scrolling: touch; }
+      .waiting .pop .content img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        position: relative; }
+    .waiting .pop .btn-close {
+      margin: 0;
+      width: 11.875%;
+      height: 0;
+      position: absolute;
+      padding-top: 11.875%;
+      right: 0;
+      left: auto;
+      margin-right: 3.125%;
+      z-index: 1;
+      top: 0;
+      bottom: 0;
+      margin-top: 0%;
+      margin-bottom: "auto";
+      z-index: 3; }
+      .waiting .pop .btn-close img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto; }
+    .waiting .pop.in {
+      -webkit-animation: fadeInPop 0.25s 1 linear forwards 0s;
+      -o-animation: fadeInPop 0.25s 1 linear forwards 0s;
+      animation: fadeInPop 0.25s 1 linear forwards 0s; }
   .join .bg {
     margin: 0;
     width: 100%;
@@ -15622,7 +15713,7 @@ html {
     z-index: 2;
     top: 0;
     bottom: 0;
-    margin-top: 113.4375%;
+    margin-top: 110.9375%;
     margin-bottom: 0%;
     z-index: 10; }
     .thankyou .share img {
@@ -16711,6 +16802,79 @@ html {
 @keyframes fadeIn2 {
   from {
     opacity: 0.1;
+    -webkit-transform: translate3d(0, 0, 1px);
+            transform: translate3d(0, 0, 1px); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 1px);
+            transform: translate3d(0, 0, 1px); } }
+
+@-webkit-keyframes fadePop {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 1px);
+            transform: translate3d(0, 0, 1px); }
+  99.9999% {
+    opacity: 0;
+    height: 100%;
+    -webkit-transform: translate3d(0, 0, 1px);
+            transform: translate3d(0, 0, 1px); }
+  100% {
+    opacity: 0;
+    height: 0;
+    -webkit-transform: translate3d(0, 0, 1px);
+            transform: translate3d(0, 0, 1px); } }
+
+@-o-keyframes fadePop {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 1px); }
+  99.9999% {
+    opacity: 0;
+    height: 100%;
+    transform: translate3d(0, 0, 1px); }
+  100% {
+    opacity: 0;
+    height: 0;
+    transform: translate3d(0, 0, 1px); } }
+
+@keyframes fadePop {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 1px);
+            transform: translate3d(0, 0, 1px); }
+  99.9999% {
+    opacity: 0;
+    height: 100%;
+    -webkit-transform: translate3d(0, 0, 1px);
+            transform: translate3d(0, 0, 1px); }
+  100% {
+    opacity: 0;
+    height: 0;
+    -webkit-transform: translate3d(0, 0, 1px);
+            transform: translate3d(0, 0, 1px); } }
+
+@-webkit-keyframes fadeInPop {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 1px);
+            transform: translate3d(0, 0, 1px); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 1px);
+            transform: translate3d(0, 0, 1px); } }
+
+@-o-keyframes fadeInPop {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 0, 1px); }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 1px); } }
+
+@keyframes fadeInPop {
+  from {
+    opacity: 0;
     -webkit-transform: translate3d(0, 0, 1px);
             transform: translate3d(0, 0, 1px); }
   to {
