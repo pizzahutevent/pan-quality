@@ -15722,9 +15722,9 @@ html {
       left: 0;
       width: 100%;
       height: auto; }
-  .rule .center {
+  .rule .center, .award .center {
     overflow: auto; }
-  .rule .bg {
+  .rule .bg, .award .bg {
     margin: 0;
     width: 100%;
     height: 0;
@@ -15741,7 +15741,7 @@ html {
     margin-bottom: 0%;
     background-size: 100% auto;
     background-position: center top; }
-    .rule .bg .subitem {
+    .rule .bg .subitem, .award .bg .subitem {
       color: #fff;
       font-size: 22px;
       padding: 2em 1em 4em;
