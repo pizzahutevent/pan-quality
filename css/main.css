@@ -10629,6 +10629,33 @@ html {
     .home .rule .center {
       height: auto; }
 
+.award {
+  background: #940000; }
+  .award .bg {
+    margin: 0;
+    width: 580px;
+    height: 0;
+    position: relative;
+    padding-top: 4230px;
+    margin-left: 0px;
+    left: 0;
+    right: auto;
+    margin-right: 0px;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-size: 100% auto;
+    background-position: center top;
+    margin: 0 auto; }
+    .award .bg .subitem {
+      color: #fff;
+      font-size: 22px;
+      padding-top: 80px; }
+  .award .center {
+    height: auto; }
+
 @media screen and (max-width: 800px) {
   .waiting .bg {
     margin: 0;
