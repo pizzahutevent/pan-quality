@@ -10655,6 +10655,8 @@ html {
       padding-top: 80px; }
   .award .center {
     height: auto; }
+  .award .scroll-container {
+    display: none; }
 
 @media screen and (max-width: 800px) {
   .waiting .bg {
